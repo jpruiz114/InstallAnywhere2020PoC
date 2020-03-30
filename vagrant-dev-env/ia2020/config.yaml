@@ -1,0 +1,24 @@
+configs:
+  use: 'default'
+  name: 'ubuntu-ia2020'
+  box:
+    username: ''
+    password: ''
+  default:
+    test:
+      major: ''
+      minor: ''
+    patch_version_override_path: ''
+    box_version: '20200206.0.0'
+    disk_size: '20GB'
+    os_version: '18.04'
+    public_ip: '192.168.100.100'
+    port: '8080'
+    java_version: '8'
+    cpus: '2'
+    memory: '8192'
+    vram: '256'
+    clipboard: 'bidirectional'
+    natdnshostresolver1: 'on'
+    natdnsproxy1: 'on'
+# ubuntu 18

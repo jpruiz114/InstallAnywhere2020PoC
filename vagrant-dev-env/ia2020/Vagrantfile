@@ -1,0 +1,94 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+unless Vagrant.has_plugin?("vagrant-disksize")
+	system("vagrant plugin install vagrant-disksize")
+	puts "Dependencies installed, try again"
+	exit
+end
+
+unless Vagrant.has_plugin?("vagrant-host-shell")
+	system("vagrant plugin install vagrant-host-shell")
+	puts "Dependencies installed, try again"
+	exit
+end
+
+unless Vagrant.has_plugin?("vagrant-reload")
+	system("vagrant plugin install vagrant-reload")
+	puts "Dependencies installed, try again"
+	exit
+end
+
+current_dir    = File.dirname(File.expand_path(__FILE__))
+configs        = YAML.load_file("#{current_dir}/config.yaml")
+vagrant_config = configs['configs'][configs['configs']['use']]
+
+console_message  = "the app will be avilable in #{vagrant_config['public_ip']}:#{vagrant_config['port']}"
+
+NAME = configs['configs']['name']
+
+Vagrant.configure("2") do |config|
+	config.vm.box = vagrant_config['os_version'] == '16.04' ? 'ubuntu/xenial64' : 'ubuntu/bionic64'
+	config.vm.box_version = vagrant_config['box_version']
+	config.vm.define NAME
+	config.vm.network "private_network", ip: vagrant_config['public_ip']
+
+	config.vm.provider :virtualbox do |vb|
+		vb.gui = true
+		vb.name = NAME
+		vb.customize ["modifyvm", :id, "--cpus", vagrant_config['cpus']]
+		vb.customize ["modifyvm", :id, "--memory", vagrant_config['memory']]
+		vb.customize ["modifyvm", :id, "--vram", vagrant_config['vram']]
+		vb.customize ["modifyvm", :id, "--clipboard", vagrant_config['clipboard']]
+		vb.customize ["modifyvm", :id, "--natdnshostresolver1", vagrant_config['natdnshostresolver1']]
+		vb.customize ["modifyvm", :id, "--natdnsproxy1", vagrant_config['natdnsproxy1']]
+	end
+
+	config.disksize.size = vagrant_config['disk_size']
+
+	config.vm.synced_folder "./../../builds", "/host/builds"
+	config.vm.synced_folder "./../../java", "/host/java"
+	config.vm.synced_folder "./../../licenses", "/host/licenses"
+	config.vm.synced_folder "./../../logs", "/host/logs"
+	config.vm.synced_folder "./../../scripts", "/host/scripts"
+	config.vm.synced_folder "./../../shared", "/host/shared"
+
+	test_block = vagrant_config['test']
+	major = test_block['major']
+	minor = test_block['minor']
+
+	box_block = configs['configs']['box']
+	box_username = box_block['username']
+	box_password = box_block['password']
+
+	patch_version_override_path = vagrant_config['patch_version_override_path']
+
+	config.vm.provision :shell, path: "./../../scripts/ubuntu/fix-carriage-char-scripts.sh"
+	config.vm.provision :shell, path: "./../../scripts/ubuntu/update.sh"
+	config.vm.provision :shell, path: "./../../scripts/ubuntu/install-vb-guest-tools.sh"
+	config.vm.provision :shell, path: "./../../scripts/ubuntu/install-gui.sh", args: [vagrant_config['os_version']]
+	config.vm.provision :shell, path: "./../../scripts/ubuntu/install-gnome-terminal.sh"
+	config.vm.provision :shell, path: "./../../scripts/ubuntu/install-java.sh", args: [vagrant_config['java_version'], vagrant_config['os_version']]
+	config.vm.provision :shell, path: "./../../scripts/ubuntu/extras.sh", args: [vagrant_config['os_version']]
+	config.vm.provision :shell, path: "./../../scripts/ubuntu/install-chrome.sh"
+	config.vm.provision :shell, path: "./../../scripts/ubuntu/nocrc/compile-automated-tests.sh"
+	config.vm.provision :shell, path: "./../../scripts/ubuntu/change-ubuntu-password.sh"
+	config.vm.provision :reload
+	config.vm.provision :shell, path: "./../../scripts/ubuntu/pentaho/install-pentaho-tools.sh", args: [major, minor, box_username, box_password, patch_version_override_path]
+
+	config.vm.provision :host_shell do |host_shell|
+		host_shell.inline = "echo #{console_message}"
+	end
+
+	config.trigger.before :up do |trigger|
+    trigger.name = "before-up"
+    trigger.info = "Running actions before vagrant up"
+  end
+
+  config.trigger.after :up do |trigger|
+    trigger.name = "after-up"
+    trigger.info = "Running actions after vagrant up"
+
+		trigger.run_remote = {path: "./../../scripts/ubuntu/after-vagrant-up-config.sh"}
+  end
+end
