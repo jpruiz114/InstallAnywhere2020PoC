@@ -1,0 +1,181 @@
+# InstallAnywhere Localization Information and Mapping File
+#
+# This file provides information for the mappings of localization properties
+#     to the action for which the localization is provided.  This file is meant
+#     to be used in conjunction with the custom_xx files found in the same
+#     directory.
+#
+# Notes on the conventions used in this file:
+#     '+--'  denotes a data object that belongs to another given object (it
+#            defines some portion of the properties of its owner object).  This
+#            data object possesses one or more properties that are localizable
+#     '|--'  denotes a parent-child relationship between two objects (typically,
+#            this relationship is represented visually as a hierarchy or nesting
+#            in the Install task of InstallAnywhere's Advanced Designer)
+#     'NoEP' denotes an object that exists in the tree, but does not possess any
+#            externalizable/localizable properties
+#
+#     The relationships described above can be used to help identify the correct
+#     property to configure an object when working with the custom_xx files.
+#
+# Product Name: SimpleTextEditor
+# Project File: /host/shared/ia2020/SimpleTextEditor-1.1/SimpleTextEditor-1.1.iap_xml
+# Generated:    Mon Mar 30 19:18:59 UTC 2020
+
+
+---- PRE-INSTALL ACTIONS ----
+-- IntroAction.267c9ffeb6ff
+   +-- Help.267c9fffb6ff
+-- InstallDirAction.267c9ffeb700
+   +-- Help.267c9fffb700
+-- ShortcutLocAction.267c9ffeb701
+   +-- Help.267c9fffb701
+-- ChooseJavaVMAction.267eecebb89a
+   +-- Help.267eececb89a
+-- InstallSummary.267ca001b701
+   +-- Help.267c9fffb702
+-- CustomAction.305ed21ea08d
+
+
+---- POST-INSTALL ACTIONS ----
+-- InstallFinishAction.267ca000b702
+   +-- Help.267c9fffb703
+-- ExecFile.26ad33b0ba03 (NoEP)
+-- RebootAction.267ca000b703 (NoEP)
+
+
+---- PRE-UNINSTALL ACTIONS ----
+-- UninstallIntroAction.267c9ffdb6f8
+   +-- Help.267c9ffeb6f8
+-- UCustomAction.31e4c992a15b (NoEP)
+-- UninstallAllOrFeaturesAction.267c9ffeb6f9
+-- CustomizeBundles.267c9fffb6fa
+   +-- Help.403824c19e62
+
+
+---- POST-UNINSTALL ACTIONS ----
+-- UninstallCompleteAction.267c9ffeb6fc
+-- RebootAction.267c9fffb6fd (NoEP)
+
+
+---- EXTERNAL ID TREE ----
+-- Installer.267c9fbcb6be
+   +-- Help.267c9fbfb6c0
+   +-- InstallFrameConfigurator.267c9fc2b6cd
+   +-- InstallerInfoData.267c9fc1b6cb
+   +-- InstallerUpdateSettings.267c9fbfb6c6
+   |-- InstallSet.267c9ffdb6ef
+   |-- InstallSet.267c9ffcb6ef
+   |-- InstallBundle.267c9fffb6ef
+   |-- InstallBundle.267c9ffdb6f0
+   |-- OSHost.267c9ffbb6e3 (NoEP)
+   |   |-- GhostDirectory.267c9ffcb6e3 (NoEP)
+   |   |   |-- InstallDirectory.267c9fffb705 (NoEP)
+   |   |   |   |-- InstallUninstaller.267ca000b706
+   |   |   |-- MakeExecutable.26c86b52b88f
+   |   |-- GhostDirectory.267ca000b710 (NoEP)
+   |       |-- CreateShortcut.267ca001b70f
+   |       |-- CreateShortcut.26c86b52b890
+   |-- UninstallCategory.267c9ffcb6e4
+   |-- UninstallCategory.267c9ffbb6e5
+   |-- UninstallCategory.267c9ffcb6e5
+   |-- UninstallCategory.267c9ffbb6e6
+   |-- UninstallCategory.267c9ffcb6e6
+   |-- UninstallCategory.267c9ffbb6e7
+   |-- UninstallCategory.267c9ffcb6e7
+   |-- Billboard.267c9ffbb6e4
+
+
+---- LEGEND ----
+AllOrFeaturesActionConsole              ==>      Console: Choose Uninstall Type
+ASCIIFileManipulator                    ==>      Modify Text File - Single File
+ASCIIFileManipulatorZip                 ==>      Modify Text File - In Archive
+Billboard                               ==>      Billboard
+BuildTimeMergeModule                    ==>      Import Merge Module
+ChooseDBConnectionAction                ==>      Panel: Choose Database Connection
+ChooseDBConnectionActionConsole         ==>      Console: Choose Database Connection
+ChooseFile                              ==>      Panel: Choose File
+ChooseFolder                            ==>      Panel: Choose Folder
+ChooseInstallSetAction                  ==>      Panel: Choose Install Sets
+ChooseInstallSetActionConsole           ==>      Console: Choose Install Sets
+ChooseJavaVMAction                      ==>      Panel: Choose Java VM
+ChooseJavaVMActionConsole               ==>      Console: Choose Java VM
+CompareRegExpression                    ==>      Match Regular Expression
+CompareVariable                         ==>      Compare InstallAnywhere Variables
+CompareVariableNumerically              ==>      Compare InstallAnywhere Variables Numerically
+CompareVersions                         ==>      Compare Versions
+CreateDialog                            ==>      Panel: Get User Input - Simple
+CreateDIMFileShortcut                   ==>      Create Alias, Link, Shortcut to DIM file
+CreateShortcut                          ==>      Create Alias, Link, Shortcut
+CustomizeBundles                        ==>      Panel: Choose Features to Uninstall
+CustomizeBundlesConsole                 ==>      Console: Choose Features to Uninstall
+DisplayMessage                          ==>      Panel: Display Message
+DisplayMessageConsole                   ==>      Console: Display Message
+DisplayScrollingMessage                 ==>      Panel: Scrolling Message
+EditEnvironment                         ==>      Set System Environment Variable
+Exec                                    ==>      Execute Command
+ExecuteScript                           ==>      Execute Script/Batch file
+FindFileOrFolder                        ==>      Panel: Find File/Folder
+GetPassword                             ==>      Panel: Get Password
+GetPasswordConsole                      ==>      Console: Get Password
+GetUserInput                            ==>      Panel: Get User Input - Advanced
+GetUserInputConsole                     ==>      Console: Get User Input
+HTMLPanelAction                         ==>      Panel: Display HTML
+i5OSLibraryOverrideConsole              ==>      Console: System i (i5/OS) Override Library Console
+i5OSLibraryOverridePanel                ==>      Panel: System i (i5/OS) Override Library Panel
+i5OSLoginCredential                     ==>      Panel: Get System i (i5/OS) Login Credential
+ImportantNoteAction                     ==>      Panel: Important Note
+ImportantNoteActionConsole              ==>      Console: Important Note
+InstallBundle                           ==>      Product Feature
+InstallCompleteAction                   ==>      Panel: Install Complete
+InstallCompleteActionConsole            ==>      Console: Install Complete
+InstallDirAction                        ==>      Panel: Choose Install Folder
+InstallDirActionConsole                 ==>      Console: Choose Install Folder
+InstallFailedAction                     ==>      Panel: Install Failed
+InstallFailedActionConsole              ==>      Console: Install Failed
+InstallFinishAction                     ==>      Panel: Install Complete
+InstallIFSAction                        ==>      Panel: Choose Remote System i (i5/OS) Install Folder
+InstallPanelAction                      ==>      Panel: Custom Code
+InstallProgressAction                   ==>      Install Progress
+InstallSet                              ==>      Install Set
+InstallSummary                          ==>      Panel: Pre-Install Summary
+InstallSummaryConsole                   ==>      Console: Pre-Install Summary
+InstallUninstaller                      ==>      Create Uninstaller
+IntroAction                             ==>      Panel: Introduction
+IntroActionAddFeature                   ==>      Panel: Add Features Introduction
+IntroActionAddFeatureConsole            ==>      Console: Add Features Introduction
+IntroActionConsole                      ==>      Console: Introduction
+IntroActionRemoveFeature                ==>      Panel: Remove Features Introduction
+IntroActionRemoveFeatureConsole         ==>      Console: Remove Features Introduction
+IntroActionRepairFeature                ==>      Panel: Repair Installation Introduction
+IntroActionRepairFeatureConsole         ==>      Console: Repair Installation Introduction
+LaunchDefaultBrowser                    ==>      Launch Default Browser
+LicenseAgrAction                        ==>      Panel: License Agreement
+LicenseAgrActionConsole                 ==>      Console: License Agreement
+MakeExecutable                          ==>      Create LaunchAnywhere for Java Application
+MakeRegEntry                            ==>      Set Windows Registry - Single Entry
+MinimalUIAction                         ==>      Panel: Minimal UI
+NTServiceController                     ==>      Start, Stop, Pause Windows Service
+PlugInPanelAction                       ==>      Plug-in
+PrintToConsole                          ==>      Output Text to Console
+PromptUserConsole                       ==>      Console: Show Message Console 'Dialog'
+ReadyToInstallActionConsole             ==>      Console: Ready To Install
+SetSerialNumber                         ==>      Panel: Get Serial Number
+SetSerialNumberConsole                  ==>      Console: Get Serial Number
+ShortcutLocAction                       ==>      Panel: Choose Alias, Link, Shortcut Folder
+ShortcutLocActionConsole                ==>      Console: Choose Link Folder
+ShowDialogAction                        ==>      Show Message Dialog
+SpeedASCIIFileManipulator               ==>      Modify Text File - Multiple Files
+Subuninstaller                          ==>      Execute Uninstaller:
+TomcatDeploymentOptionsAction           ==>      Panel: Tomcat Runtime Deployment
+TomcatDeploymentOptionsActionConsole    ==>      Console: Tomcat Runtime Deployment
+UninstallAllOrFeaturesAction            ==>      Panel: Choose Uninstall Type
+UninstallCategory                       ==>      Uninstall  Category
+UninstallCompleteAction                 ==>      Panel: Uninstall Complete
+UninstallCompleteActionConsole          ==>      Console: Uninstall Complete
+UninstallIntroAction                    ==>      Panel: Uninstaller Introduction
+UninstallIntroActionConsole             ==>      Console: Uninstaller Introduction
+UninstallIsmpSoftware                   ==>      Uninstall InstallShield Universal Software
+UninstallProgressAction                 ==>      Uninstall Progress
+WebsphereDeploymentOptionsAction        ==>      Panel: WebSphere Runtime Deployment
+WebsphereDeploymentOptionsActionConsole ==>      Console: WebSphere Runtime Deployment

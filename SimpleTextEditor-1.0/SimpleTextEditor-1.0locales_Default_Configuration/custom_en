@@ -1,0 +1,351 @@
+# InstallAnywhere Localization File
+#
+# External strings for locale: English (en)
+# See the 'ProjectLocalizationInfo.txt' file in this same directory for information 
+#     regarding mappings between the properties shown below and your InstallAnywhere
+#     project.
+#
+# External/Locale property names can take one of three forms:
+#     <ActionName>.<ReferenceID>.<ActionProperty>          (e.g., Installer.858175031081.productName)
+#     <ActionName>.<ReferenceID>.<ActionProperty>.<Index>  (e.g., Installer.858175031081.installLabels.01)
+#         - where the <ActionProperty> is a Vector and the <Index> represents the place within the
+#           Vector where the value of the property should be inserted
+#     _ia.<SomeProperty>                                   (e.g., _ia.MyCustomCodePanelProperty)
+#         - where <SomeProperty> is used as an identifier for a localized value by custom code
+#
+# External/Locale property values should be plain text strings.  Special or i18n characters
+#     that cannot be represented by ASCII characters should be written using escaped unicode.
+#     - see the utility 'native2ascii' distributed with your JDK
+#
+# Product Name: SimpleTextEditor
+# Project File: /host/shared/ia2020/SimpleTextEditor-1.0/SimpleTextEditor-1.0.iap_xml
+# Generated:    Mon Mar 30 19:18:57 UTC 2020
+
+
+# Billboard.267c9ffbb6e4.imageName=billboard_defaultNew.png
+Billboard.267c9ffbb6e4.imageName=billboard_defaultNew.png
+
+# Billboard.267c9ffbb6e4.imagePath=com/zerog/ia/installer/images/
+Billboard.267c9ffbb6e4.imagePath=com/zerog/ia/installer/images/
+
+# ChooseJavaVMAction.267eecebb89a.header=Please Choose a Java VM for Use by the Installed Application
+ChooseJavaVMAction.267eecebb89a.header=Please Choose a Java VM for Use by the Installed Application
+
+# ChooseJavaVMAction.267eecebb89a.title=Choose Java Virtual Machine
+ChooseJavaVMAction.267eecebb89a.title=Choose Java Virtual Machine
+
+# CreateShortcut.267ca001b70f.args=
+CreateShortcut.267ca001b70f.args=
+
+# CreateShortcut.267ca001b70f.destinationName=Change $PRODUCT_NAME$ Installation
+CreateShortcut.267ca001b70f.destinationName=Change $PRODUCT_NAME$ Installation
+
+# CreateShortcut.267ca001b70f.workingDir=
+CreateShortcut.267ca001b70f.workingDir=
+
+# CreateShortcut.269e1b36b953.args=
+CreateShortcut.269e1b36b953.args=
+
+# CreateShortcut.269e1b36b953.destinationName=SimpleTextEditor
+CreateShortcut.269e1b36b953.destinationName=SimpleTextEditor
+
+# CreateShortcut.269e1b36b953.workingDir=
+CreateShortcut.269e1b36b953.workingDir=
+
+# CustomAction.2d6d16d1bd8e.dialogLabel=Executing Custom Code...
+CustomAction.2d6d16d1bd8e.dialogLabel=Executing Custom Code...
+
+# CustomizeBundles.267c9fffb6fa.checkInstructions=Check features that you want to uninstall. Unchecked features will remain installed.
+CustomizeBundles.267c9fffb6fa.checkInstructions=Check features that you want to uninstall. Unchecked features will remain installed.
+
+# CustomizeBundles.267c9fffb6fa.title=Choose Product Features
+CustomizeBundles.267c9fffb6fa.title=Choose Product Features
+
+# CustomizeBundles.267c9fffb6fa.uncheckInstructions=Uncheck features that you want to uninstall. Checked features will remain installed.
+CustomizeBundles.267c9fffb6fa.uncheckInstructions=Uncheck features that you want to uninstall. Checked features will remain installed.
+
+# InstallBundle.267c9ffdb6f0.bundleName=Help
+InstallBundle.267c9ffdb6f0.bundleName=Help
+
+# InstallBundle.267c9ffdb6f0.description=This installs the help feature.
+InstallBundle.267c9ffdb6f0.description=This installs the help feature.
+
+# InstallBundle.267c9fffb6ef.bundleName=Application
+InstallBundle.267c9fffb6ef.bundleName=Application
+
+# InstallBundle.267c9fffb6ef.description=This installs the application feature.
+InstallBundle.267c9fffb6ef.description=This installs the application feature.
+
+# InstallDirAction.267c9ffeb700.additionalText=Please choose a destination folder for this installation.
+InstallDirAction.267c9ffeb700.additionalText=Please choose a destination folder for this installation.
+
+# InstallDirAction.267c9ffeb700.prompt=&Where Would You Like to Install?
+InstallDirAction.267c9ffeb700.prompt=&Where Would You Like to Install?
+
+# InstallDirAction.267c9ffeb700.stepTitle=Choose Install Folder
+InstallDirAction.267c9ffeb700.stepTitle=Choose Install Folder
+
+# Installer.267c9fbcb6be.installLabels.00=Introduction
+Installer.267c9fbcb6be.installLabels.00=Introduction
+
+# Installer.267c9fbcb6be.installLabels.01=Choose Install Folder
+Installer.267c9fbcb6be.installLabels.01=Choose Install Folder
+
+# Installer.267c9fbcb6be.installLabels.02=Choose Link Folder
+Installer.267c9fbcb6be.installLabels.02=Choose Link Folder
+
+# Installer.267c9fbcb6be.installLabels.03=Pre-Installation Summary
+Installer.267c9fbcb6be.installLabels.03=Pre-Installation Summary
+
+# Installer.267c9fbcb6be.installLabels.04=Installing...
+Installer.267c9fbcb6be.installLabels.04=Installing...
+
+# Installer.267c9fbcb6be.installLabels.05=Install Complete
+Installer.267c9fbcb6be.installLabels.05=Install Complete
+
+# Installer.267c9fbcb6be.installLabels.06=Choose Java Virtual Machine
+Installer.267c9fbcb6be.installLabels.06=Choose Java Virtual Machine
+
+# Installer.267c9fbcb6be.installProgressImageName=introImage.png
+Installer.267c9fbcb6be.installProgressImageName=introImage.png
+
+# Installer.267c9fbcb6be.installProgressImagePath=com/zerog/ia/installer/images/
+Installer.267c9fbcb6be.installProgressImagePath=com/zerog/ia/installer/images/
+
+# Installer.267c9fbcb6be.panelImageName=introImage.png
+Installer.267c9fbcb6be.panelImageName=introImage.png
+
+# Installer.267c9fbcb6be.panelImagePath=com/zerog/ia/installer/images/
+Installer.267c9fbcb6be.panelImagePath=com/zerog/ia/installer/images/
+
+# Installer.267c9fbcb6be.rulesFailedMessage=The installer cannot run on your configuration. It will now quit.
+Installer.267c9fbcb6be.rulesFailedMessage=The installer cannot run on your configuration. It will now quit.
+
+# Installer.267c9fbcb6be.splashScreenConsolePrompt=CHOOSE LOCALE BY NUMBER
+Installer.267c9fbcb6be.splashScreenConsolePrompt=CHOOSE LOCALE BY NUMBER
+
+# Installer.267c9fbcb6be.splashScreenConsoleTitle=Choose Locale...
+Installer.267c9fbcb6be.splashScreenConsoleTitle=Choose Locale...
+
+# Installer.267c9fbcb6be.splashScreenGUIConfirm=OK
+Installer.267c9fbcb6be.splashScreenGUIConfirm=OK
+
+# Installer.267c9fbcb6be.splashScreenGUIImageName=SplashNew.png
+Installer.267c9fbcb6be.splashScreenGUIImageName=SplashNew.png
+
+# Installer.267c9fbcb6be.splashScreenGUIImageName1=SplashNew.png
+Installer.267c9fbcb6be.splashScreenGUIImageName1=SplashNew.png
+
+# Installer.267c9fbcb6be.splashScreenGUIImageName2=SplashNew.png
+Installer.267c9fbcb6be.splashScreenGUIImageName2=SplashNew.png
+
+# Installer.267c9fbcb6be.splashScreenGUIImagePath=com/zerog/ia/installer/images/
+Installer.267c9fbcb6be.splashScreenGUIImagePath=com/zerog/ia/installer/images/
+
+# Installer.267c9fbcb6be.splashScreenGUIImagePath1=com/zerog/ia/installer/images/
+Installer.267c9fbcb6be.splashScreenGUIImagePath1=com/zerog/ia/installer/images/
+
+# Installer.267c9fbcb6be.splashScreenGUIImagePath2=com/zerog/ia/installer/images/
+Installer.267c9fbcb6be.splashScreenGUIImagePath2=com/zerog/ia/installer/images/
+
+# Installer.267c9fbcb6be.splashScreenGUIInstructions=
+Installer.267c9fbcb6be.splashScreenGUIInstructions=
+
+# Installer.267c9fbcb6be.splashScreenGUITitle=
+Installer.267c9fbcb6be.splashScreenGUITitle=
+
+# InstallerInfoData.267c9fc1b6cb.installerName=install
+InstallerInfoData.267c9fc1b6cb.installerName=install
+
+# InstallerInfoData.267c9fc1b6cb.installerTitle=SimpleTextEditor-1.0
+InstallerInfoData.267c9fc1b6cb.installerTitle=SimpleTextEditor-1.0
+
+# InstallerInfoData.267c9fc1b6cb.productDescription=
+InstallerInfoData.267c9fc1b6cb.productDescription=
+
+# InstallerInfoData.267c9fc1b6cb.productName=SimpleTextEditor
+InstallerInfoData.267c9fc1b6cb.productName=SimpleTextEditor
+
+# InstallerInfoData.267c9fc1b6cb.productURL=
+InstallerInfoData.267c9fc1b6cb.productURL=
+
+# InstallerInfoData.267c9fc1b6cb.supportURL=
+InstallerInfoData.267c9fc1b6cb.supportURL=
+
+# InstallerUpdateSettings.267c9fbfb6c6.promptMessage=Do you want to install latest available version?
+InstallerUpdateSettings.267c9fbfb6c6.promptMessage=Do you want to install latest available version?
+
+# InstallerUpdateSettings.267c9fbfb6c6.promptTitle=Installer Update
+InstallerUpdateSettings.267c9fbfb6c6.promptTitle=Installer Update
+
+# InstallFinishAction.267ca000b702.installErrorMessage=The installation of $PRODUCT_NAME$ is finished, but some errors occurred during the install.  Please see the installation log for details.
+InstallFinishAction.267ca000b702.installErrorMessage=The installation of $PRODUCT_NAME$ is finished, but some errors occurred during the install.  Please see the installation log for details.
+
+# InstallFinishAction.267ca000b702.installFatalMessage=The installation of $PRODUCT_NAME$ has been rolled back.\n\n Please see the installation log for details.
+InstallFinishAction.267ca000b702.installFatalMessage=The installation of $PRODUCT_NAME$ has been rolled back.\n\n Please see the installation log for details.
+
+# InstallFinishAction.267ca000b702.installSuccessMessage=Congratulations! $PRODUCT_NAME$ has been successfully installed to:\n\n     $USER_INSTALL_DIR$\n\nPress \"Done\" to quit the installer.
+InstallFinishAction.267ca000b702.installSuccessMessage=Congratulations! $PRODUCT_NAME$ has been successfully installed to:\n\n     $USER_INSTALL_DIR$\n\nPress \"Done\" to quit the installer.
+
+# InstallFinishAction.267ca000b702.installWarningMessage=The installation of $PRODUCT_NAME$ is finished, but some warnings occurred during the install.  Please see the installation log for details.
+InstallFinishAction.267ca000b702.installWarningMessage=The installation of $PRODUCT_NAME$ is finished, but some warnings occurred during the install.  Please see the installation log for details.
+
+# InstallFinishAction.267ca000b702.launchText=
+InstallFinishAction.267ca000b702.launchText=
+
+# InstallFinishAction.267ca000b702.rebootNotNeededMessage=
+InstallFinishAction.267ca000b702.rebootNotNeededMessage=
+
+# InstallFinishAction.267ca000b702.rebootRecommendedMessage=You should restart the system to complete the installation.
+InstallFinishAction.267ca000b702.rebootRecommendedMessage=You should restart the system to complete the installation.
+
+# InstallFinishAction.267ca000b702.rebootRequiredMessage=You need to restart the system to complete the installation.
+InstallFinishAction.267ca000b702.rebootRequiredMessage=You need to restart the system to complete the installation.
+
+# InstallFinishAction.267ca000b702.windowTitle=Install Complete
+InstallFinishAction.267ca000b702.windowTitle=Install Complete
+
+# InstallFrameConfigurator.267c9fc2b6cd.maintModeTitle=Configure $PRODUCT_NAME$
+InstallFrameConfigurator.267c9fc2b6cd.maintModeTitle=Configure $PRODUCT_NAME$
+
+# InstallFrameConfigurator.267c9fc2b6cd.uninstallerTitle=Change $PRODUCT_NAME$ Installation
+InstallFrameConfigurator.267c9fc2b6cd.uninstallerTitle=Change $PRODUCT_NAME$ Installation
+
+# InstallSet.267c9ffcb6ef.description=Only required application features will be installed.  This option is recommended only for users with limited disk space.
+InstallSet.267c9ffcb6ef.description=Only required application features will be installed.  This option is recommended only for users with limited disk space.
+
+# InstallSet.267c9ffcb6ef.imageName=minimalNew.png
+InstallSet.267c9ffcb6ef.imageName=minimalNew.png
+
+# InstallSet.267c9ffcb6ef.imagePath=com/zerog/ia/installer/images/
+InstallSet.267c9ffcb6ef.imagePath=com/zerog/ia/installer/images/
+
+# InstallSet.267c9ffcb6ef.installSetName=Minimal
+InstallSet.267c9ffcb6ef.installSetName=Minimal
+
+# InstallSet.267c9ffdb6ef.description=The most common application features will be installed.  This option is recommended for most users.
+InstallSet.267c9ffdb6ef.description=The most common application features will be installed.  This option is recommended for most users.
+
+# InstallSet.267c9ffdb6ef.imageName=typicalNew.png
+InstallSet.267c9ffdb6ef.imageName=typicalNew.png
+
+# InstallSet.267c9ffdb6ef.imagePath=com/zerog/ia/installer/images/
+InstallSet.267c9ffdb6ef.imagePath=com/zerog/ia/installer/images/
+
+# InstallSet.267c9ffdb6ef.installSetName=Typical
+InstallSet.267c9ffdb6ef.installSetName=Typical
+
+# InstallSet.267cad05b807.description=Choose this option to customize the features to be installed.
+InstallSet.267cad05b807.description=Choose this option to customize the features to be installed.
+
+# InstallSet.267cad05b807.imageName=customIconNew.png
+InstallSet.267cad05b807.imageName=customIconNew.png
+
+# InstallSet.267cad05b807.imagePath=com/zerog/ia/installer/images/
+InstallSet.267cad05b807.imagePath=com/zerog/ia/installer/images/
+
+# InstallSet.267cad05b807.installSetName=Custom
+InstallSet.267cad05b807.installSetName=Custom
+
+# InstallSummary.267ca001b701.stepPrompt=Please Review the Following Before Continuing:
+InstallSummary.267ca001b701.stepPrompt=Please Review the Following Before Continuing:
+
+# InstallSummary.267ca001b701.title=Pre-Installation Summary
+InstallSummary.267ca001b701.title=Pre-Installation Summary
+
+# InstallUninstaller.267ca000b706.destinationName=Change $PRODUCT_NAME$ Installation
+InstallUninstaller.267ca000b706.destinationName=Change $PRODUCT_NAME$ Installation
+
+# IntroAction.267c9ffeb6ff.message=InstallAnywhere will guide you through the installation of $PRODUCT_NAME$.\n\nIt is strongly recommended that you quit all programs before continuing with this installation.\n\nClick the 'Next' button to proceed to the next screen. If you want to change something on a previous screen, click the 'Previous' button.\n\nYou may cancel this installation at any time by clicking the 'Cancel' button.
+IntroAction.267c9ffeb6ff.message=InstallAnywhere will guide you through the installation of $PRODUCT_NAME$.\n\nIt is strongly recommended that you quit all programs before continuing with this installation.\n\nClick the 'Next' button to proceed to the next screen. If you want to change something on a previous screen, click the 'Previous' button.\n\nYou may cancel this installation at any time by clicking the 'Cancel' button.
+
+# IntroAction.267c9ffeb6ff.stepTitle=Introduction
+IntroAction.267c9ffeb6ff.stepTitle=Introduction
+
+# MakeExecutable.269e1b36b952.destinationName=SimpleTextEditor
+MakeExecutable.269e1b36b952.destinationName=SimpleTextEditor
+
+# ShortcutLocAction.267c9ffeb701.macPrompt=Where would you like to create aliases?
+ShortcutLocAction.267c9ffeb701.macPrompt=Where would you like to create aliases?
+
+# ShortcutLocAction.267c9ffeb701.macTitle=Choose Alias Folder
+ShortcutLocAction.267c9ffeb701.macTitle=Choose Alias Folder
+
+# ShortcutLocAction.267c9ffeb701.unixPrompt=Where would you like to create links?
+ShortcutLocAction.267c9ffeb701.unixPrompt=Where would you like to create links?
+
+# ShortcutLocAction.267c9ffeb701.unixTitle=Choose Link Folder
+ShortcutLocAction.267c9ffeb701.unixTitle=Choose Link Folder
+
+# ShortcutLocAction.267c9ffeb701.winPrompt=Where would you like to create product icons?
+ShortcutLocAction.267c9ffeb701.winPrompt=Where would you like to create product icons?
+
+# ShortcutLocAction.267c9ffeb701.winTitle=Choose Shortcut Folder
+ShortcutLocAction.267c9ffeb701.winTitle=Choose Shortcut Folder
+
+# UninstallAllOrFeaturesAction.267c9ffeb6f9.allDescription=Completely remove all features and components of $PRODUCT_NAME$ that were installed by InstallAnywhere. Files and folders created after the installation will not be affected.
+UninstallAllOrFeaturesAction.267c9ffeb6f9.allDescription=Completely remove all features and components of $PRODUCT_NAME$ that were installed by InstallAnywhere. Files and folders created after the installation will not be affected.
+
+# UninstallAllOrFeaturesAction.267c9ffeb6f9.allLabel=Complete Uninstall
+UninstallAllOrFeaturesAction.267c9ffeb6f9.allLabel=Complete Uninstall
+
+# UninstallAllOrFeaturesAction.267c9ffeb6f9.instructions=Please select one of the following options:
+UninstallAllOrFeaturesAction.267c9ffeb6f9.instructions=Please select one of the following options:
+
+# UninstallAllOrFeaturesAction.267c9ffeb6f9.someDescription=Choose specific features of $PRODUCT_NAME$ that were installed by InstallAnywhere to be uninstalled.
+UninstallAllOrFeaturesAction.267c9ffeb6f9.someDescription=Choose specific features of $PRODUCT_NAME$ that were installed by InstallAnywhere to be uninstalled.
+
+# UninstallAllOrFeaturesAction.267c9ffeb6f9.someLabel=Uninstall Specific Features
+UninstallAllOrFeaturesAction.267c9ffeb6f9.someLabel=Uninstall Specific Features
+
+# UninstallAllOrFeaturesAction.267c9ffeb6f9.stepTitle=Uninstall Options
+UninstallAllOrFeaturesAction.267c9ffeb6f9.stepTitle=Uninstall Options
+
+# UninstallCategory.267c9ffbb6e5.categoryName=LaunchAnywheres
+UninstallCategory.267c9ffbb6e5.categoryName=LaunchAnywheres
+
+# UninstallCategory.267c9ffbb6e6.categoryName=Registry Entries
+UninstallCategory.267c9ffbb6e6.categoryName=Registry Entries
+
+# UninstallCategory.267c9ffbb6e7.categoryName=Folders
+UninstallCategory.267c9ffbb6e7.categoryName=Folders
+
+# UninstallCategory.267c9ffcb6e4.categoryName=Files
+UninstallCategory.267c9ffcb6e4.categoryName=Files
+
+# UninstallCategory.267c9ffcb6e5.categoryName=Shortcuts/Links/Aliases
+UninstallCategory.267c9ffcb6e5.categoryName=Shortcuts/Links/Aliases
+
+# UninstallCategory.267c9ffcb6e6.categoryName=Native Packages
+UninstallCategory.267c9ffcb6e6.categoryName=Native Packages
+
+# UninstallCategory.267c9ffcb6e7.categoryName=Others Category
+UninstallCategory.267c9ffcb6e7.categoryName=Others Category
+
+# UninstallCompleteAction.267c9ffeb6fc.rebootNotNeededMessage=
+UninstallCompleteAction.267c9ffeb6fc.rebootNotNeededMessage=
+
+# UninstallCompleteAction.267c9ffeb6fc.rebootRecommendedMessage=You should restart the system to complete the uninstallation.
+UninstallCompleteAction.267c9ffeb6fc.rebootRecommendedMessage=You should restart the system to complete the uninstallation.
+
+# UninstallCompleteAction.267c9ffeb6fc.rebootRequiredMessage=You need to restart the system to complete the uninstallation.
+UninstallCompleteAction.267c9ffeb6fc.rebootRequiredMessage=You need to restart the system to complete the uninstallation.
+
+# UninstallCompleteAction.267c9ffeb6fc.stepTitle=Uninstall Complete
+UninstallCompleteAction.267c9ffeb6fc.stepTitle=Uninstall Complete
+
+# UninstallCompleteAction.267c9ffeb6fc.uninstallIncompleteMessage=The following items could not be removed:
+UninstallCompleteAction.267c9ffeb6fc.uninstallIncompleteMessage=The following items could not be removed:
+
+# UninstallCompleteAction.267c9ffeb6fc.uninstallSkippedMessage=Unable to uninstall $PRODUCT_NAME$.
+UninstallCompleteAction.267c9ffeb6fc.uninstallSkippedMessage=Unable to uninstall $PRODUCT_NAME$.
+
+# UninstallCompleteAction.267c9ffeb6fc.uninstallSuccessMessage=All items were successfully uninstalled.
+UninstallCompleteAction.267c9ffeb6fc.uninstallSuccessMessage=All items were successfully uninstalled.
+
+# UninstallIntroAction.267c9ffdb6f8.message=About to uninstall...\n\n$PRODUCT_NAME$\n\nInstallAnywhere will remove the features that were installed during product installation.  Files and folders created after installation will not be removed.
+UninstallIntroAction.267c9ffdb6f8.message=About to uninstall...\n\n$PRODUCT_NAME$\n\nInstallAnywhere will remove the features that were installed during product installation.  Files and folders created after installation will not be removed.
+
+# UninstallIntroAction.267c9ffdb6f8.stepTitle=Uninstall $PRODUCT_NAME$
+UninstallIntroAction.267c9ffdb6f8.stepTitle=Uninstall $PRODUCT_NAME$
+
