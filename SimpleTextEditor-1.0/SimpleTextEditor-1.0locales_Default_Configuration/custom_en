@@ -19,7 +19,7 @@
 #
 # Product Name: SimpleTextEditor
 # Project File: /host/shared/ia2020/SimpleTextEditor-1.0/SimpleTextEditor-1.0.iap_xml
-# Generated:    Mon Mar 30 21:56:50 UTC 2020
+# Generated:    Wed Apr 01 17:13:33 UTC 2020
 
 
 # Billboard.267c9ffbb6e4.imageName=billboard_defaultNew.png
@@ -181,11 +181,11 @@ InstallerUpdateSettings.267c9fbfb6c6.promptTitle=Installer Update
 # InstallFinishAction.267ca000b702.installErrorMessage=The installation of $PRODUCT_NAME$ is finished, but some errors occurred during the install.  Please see the installation log for details.
 InstallFinishAction.267ca000b702.installErrorMessage=The installation of $PRODUCT_NAME$ is finished, but some errors occurred during the install.  Please see the installation log for details.
 
-# InstallFinishAction.267ca000b702.installFatalMessage=The installation of $PRODUCT_NAME$ has been rolled back.\n\n Please see the installation log for details.
-InstallFinishAction.267ca000b702.installFatalMessage=The installation of $PRODUCT_NAME$ has been rolled back.\n\n Please see the installation log for details.
+# InstallFinishAction.267ca000b702.installFatalMessage=The installation of $PRODUCT_NAME$ has been rolled back.\r\n\r\n Please see the installation log for details.
+InstallFinishAction.267ca000b702.installFatalMessage=The installation of $PRODUCT_NAME$ has been rolled back.\r\n\r\n Please see the installation log for details.
 
-# InstallFinishAction.267ca000b702.installSuccessMessage=Congratulations! $PRODUCT_NAME$ has been successfully installed to:\n\n     $USER_INSTALL_DIR$\n\nPress \"Done\" to quit the installer.
-InstallFinishAction.267ca000b702.installSuccessMessage=Congratulations! $PRODUCT_NAME$ has been successfully installed to:\n\n     $USER_INSTALL_DIR$\n\nPress \"Done\" to quit the installer.
+# InstallFinishAction.267ca000b702.installSuccessMessage=Congratulations! $PRODUCT_NAME$ has been successfully installed to:\r\n\r\n     $USER_INSTALL_DIR$\r\n\r\nPress \"Done\" to quit the installer.
+InstallFinishAction.267ca000b702.installSuccessMessage=Congratulations! $PRODUCT_NAME$ has been successfully installed to:\r\n\r\n     $USER_INSTALL_DIR$\r\n\r\nPress \"Done\" to quit the installer.
 
 # InstallFinishAction.267ca000b702.installWarningMessage=The installation of $PRODUCT_NAME$ is finished, but some warnings occurred during the install.  Please see the installation log for details.
 InstallFinishAction.267ca000b702.installWarningMessage=The installation of $PRODUCT_NAME$ is finished, but some warnings occurred during the install.  Please see the installation log for details.
@@ -256,8 +256,8 @@ InstallSummary.267ca001b701.title=Pre-Installation Summary
 # InstallUninstaller.267ca000b706.destinationName=Change $PRODUCT_NAME$ Installation
 InstallUninstaller.267ca000b706.destinationName=Change $PRODUCT_NAME$ Installation
 
-# IntroAction.267c9ffeb6ff.message=InstallAnywhere will guide you through the installation of $PRODUCT_NAME$.\n\nIt is strongly recommended that you quit all programs before continuing with this installation.\n\nClick the 'Next' button to proceed to the next screen. If you want to change something on a previous screen, click the 'Previous' button.\n\nYou may cancel this installation at any time by clicking the 'Cancel' button.
-IntroAction.267c9ffeb6ff.message=InstallAnywhere will guide you through the installation of $PRODUCT_NAME$.\n\nIt is strongly recommended that you quit all programs before continuing with this installation.\n\nClick the 'Next' button to proceed to the next screen. If you want to change something on a previous screen, click the 'Previous' button.\n\nYou may cancel this installation at any time by clicking the 'Cancel' button.
+# IntroAction.267c9ffeb6ff.message=InstallAnywhere will guide you through the installation of $PRODUCT_NAME$.\r\n\r\nIt is strongly recommended that you quit all programs before continuing with this installation.\r\n\r\nClick the 'Next' button to proceed to the next screen. If you want to change something on a previous screen, click the 'Previous' button.\r\n\r\nYou may cancel this installation at any time by clicking the 'Cancel' button.
+IntroAction.267c9ffeb6ff.message=InstallAnywhere will guide you through the installation of $PRODUCT_NAME$.\r\n\r\nIt is strongly recommended that you quit all programs before continuing with this installation.\r\n\r\nClick the 'Next' button to proceed to the next screen. If you want to change something on a previous screen, click the 'Previous' button.\r\n\r\nYou may cancel this installation at any time by clicking the 'Cancel' button.
 
 # IntroAction.267c9ffeb6ff.stepTitle=Introduction
 IntroAction.267c9ffeb6ff.stepTitle=Introduction
@@ -343,8 +343,8 @@ UninstallCompleteAction.267c9ffeb6fc.uninstallSkippedMessage=Unable to uninstall
 # UninstallCompleteAction.267c9ffeb6fc.uninstallSuccessMessage=All items were successfully uninstalled.
 UninstallCompleteAction.267c9ffeb6fc.uninstallSuccessMessage=All items were successfully uninstalled.
 
-# UninstallIntroAction.267c9ffdb6f8.message=About to uninstall...\n\n$PRODUCT_NAME$\n\nInstallAnywhere will remove the features that were installed during product installation.  Files and folders created after installation will not be removed.
-UninstallIntroAction.267c9ffdb6f8.message=About to uninstall...\n\n$PRODUCT_NAME$\n\nInstallAnywhere will remove the features that were installed during product installation.  Files and folders created after installation will not be removed.
+# UninstallIntroAction.267c9ffdb6f8.message=About to uninstall...\r\n\r\n$PRODUCT_NAME$\r\n\r\nInstallAnywhere will remove the features that were installed during product installation.  Files and folders created after installation will not be removed.
+UninstallIntroAction.267c9ffdb6f8.message=About to uninstall...\r\n\r\n$PRODUCT_NAME$\r\n\r\nInstallAnywhere will remove the features that were installed during product installation.  Files and folders created after installation will not be removed.
 
 # UninstallIntroAction.267c9ffdb6f8.stepTitle=Uninstall $PRODUCT_NAME$
 UninstallIntroAction.267c9ffdb6f8.stepTitle=Uninstall $PRODUCT_NAME$
