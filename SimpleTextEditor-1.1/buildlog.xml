@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<BuildLog created="4/1/20 5:13:34 PM">
+<BuildLog created="4/1/20 5:59:20 PM">
 	<BuildInstance name="SimpleTextEditor" path="/host/shared/ia2020/SimpleTextEditor-1.1/SimpleTextEditor-1.1.iap_xml">
-		<BuildBegin>4/1/20 5:13:34 PM</BuildBegin>
+		<BuildBegin>4/1/20 5:59:20 PM</BuildBegin>
 		<BuildConfiguration Name="Default Configuration">
-			<BeginTime>4/1/20 5:13:34 PM</BeginTime>
-			<EndTime>4/1/20 5:16:39 PM</EndTime>
+			<BeginTime>4/1/20 5:59:20 PM</BeginTime>
+			<EndTime>4/1/20 6:02:32 PM</EndTime>
 			<Script status="SUCCESS">
 				<description>InstallAnywhere can not create the software identification tag because the required fields are missing under Project &gt; Software Tag</description>
 			</Script>
@@ -19,6 +19,6 @@
 			</Installers>
 			<BuildList/>
 		</BuildConfiguration>
-		<BuildEnd>4/1/20 5:17:01 PM</BuildEnd>
+		<BuildEnd>4/1/20 6:02:56 PM</BuildEnd>
 	</BuildInstance>
 </BuildLog>
