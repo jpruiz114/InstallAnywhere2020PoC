@@ -316,3 +316,11 @@ The shared folder can also be used to clone the current project and it's advised
 ***
 
 ![logs-home](screenshots/logs-home.png)
+
+## Net steps
+
+- Add features to check if services are running and stop them
+- Uninstall previous installations built with older InstallAnywhere versions
+- Customize the installer UI to allow users specify paths and custom actions extending CustomCodePanel:
+  https://docs.flexera.com/InstallAnywhereAPI/IA2015/javadoc/com/zerog/ia/api/pub/CustomCodePanel.html
+- Generate macOS installers
