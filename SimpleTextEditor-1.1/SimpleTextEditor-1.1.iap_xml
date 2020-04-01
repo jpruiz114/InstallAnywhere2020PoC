@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- This script was automatically generated using InstallAnywhere 2020, Build 6336
      STATUS: Fully-Functional UNLICENSED Trial Edition
-     DATE:   Mon Mar 30 21:56:54 UTC 2020 -->
-<InstallAnywhere_Deployment_Project increments="4496">
+     DATE:   Wed Apr 01 17:39:02 UTC 2020 -->
+<InstallAnywhere_Deployment_Project increments="4437">
 	<!-- ** DO NOT EDIT ** Essential authorization and configuration data ** DO NOT EDIT ** -->
 	<essentialScriptInfo>
 		<versionID major="20" minor="0" revision="0"/>
@@ -10,7 +10,7 @@
 		<scriptID>12,42,11,85,78,76,73,67,69,78,83,69,68</scriptID>
 		<buildID>3,13,71,76,105,110,117,120,44,32,52,46,49,53,46,48,45,57,49,45,103,101,110,101,114,105,99,44,32,97,109,100,54,52,59,32,74,97,118,97,32,49,46,56,46,48,95,50,48,50,44,32,79,114,97,99,108,101,32,67,111,114,112,111,114,97,116,105,111,110,44,32,104,116,116,112,58,47,47,106,97,118,97,46,111,114,97,99,108,101,46,99,111,109,47,59,32,101,110,44,32,85,110,107,110,111,119,110,59,32,85,84,70,45,56</buildID>
 		<!-- The authorizationID may change between project saves and builds.  This does not effect the integrity of the project, nor do changes in this value represent changes in the actual InstallAnywhere project. -->
-		<authorizationID>1,0,0,112,32,118,-128,80,64,99,70,101,125,121,100,96,105,48,48,49,56,52,67,98,113,112,124,44,81,100,99,62,57,15,14,10,14,50,13,1,1,0,0</authorizationID>
+		<authorizationID>1,0,0,112,48,-46,48,32,64,99,70,101,125,121,100,96,105,48,48,49,56,52,67,98,113,112,124,44,81,100,99,62,57,15,14,14,0,51,6,1,1,0,0</authorizationID>
 	</essentialScriptInfo>
 	<installationObjects uniqueObjects="211">
 		<object class="com.zerog.ia.installer.Installer" objectID="267c9fbcb6be">
@@ -275,19 +275,6 @@ and any path to a file to read from that file]]></string>
 								</object>
 							</method>
 							<method name="addElement">
-								<object class="com.zerog.ia.installer.util.LAXPropertyData" objectID="26c876fcb895">
-									<property name="propertyValue">
-										<string><![CDATA[2750]]></string>
-									</property>
-									<property name="propertyName">
-										<string><![CDATA[lax.nl.win32.microsoftvm.min.version]]></string>
-									</property>
-									<property name="propertyComment">
-										<string><![CDATA[The minimum version of Microsoft's VM this application will run against]]></string>
-									</property>
-								</object>
-							</method>
-							<method name="addElement">
 								<object class="com.zerog.ia.installer.util.LAXPropertyData" objectID="26c876fcb894">
 									<property name="propertyValue">
 										<string><![CDATA[$IA_CLASSPATH$]]></string>
@@ -298,6 +285,19 @@ and any path to a file to read from that file]]></string>
 									<property name="propertyComment">
 										<string><![CDATA[the Java classpath necessary to run this application
 Can be separated by colons (Mac OS/Unix) or semicolons (Windows)]]></string>
+									</property>
+								</object>
+							</method>
+							<method name="addElement">
+								<object class="com.zerog.ia.installer.util.LAXPropertyData" objectID="26c876fcb895">
+									<property name="propertyValue">
+										<string><![CDATA[2750]]></string>
+									</property>
+									<property name="propertyName">
+										<string><![CDATA[lax.nl.win32.microsoftvm.min.version]]></string>
+									</property>
+									<property name="propertyComment">
+										<string><![CDATA[The minimum version of Microsoft's VM this application will run against]]></string>
 									</property>
 								</object>
 							</method>
@@ -544,15 +544,19 @@ Relative paths are relative to the launcher.]]></string>
 														</object>
 													</method>
 													<method name="addElement">
-														<object class="com.zerog.ia.installer.util.LAXPropertyData" objectID="267ca000b70e">
+														<object class="com.zerog.ia.installer.util.LAXPropertyData" objectID="267ca000b70b">
 															<property name="propertyValue">
-																<string><![CDATA[]]></string>
+																<string><![CDATA[0]]></string>
 															</property>
 															<property name="propertyName">
-																<string><![CDATA[lax.product.version]]></string>
+																<string><![CDATA[lax.nl.win32.java.launcher.platform]]></string>
 															</property>
 															<property name="propertyComment">
-																<string><![CDATA[The product version of the LaunchAnywhere that created this properties file]]></string>
+																<string><![CDATA[Set this variable to following values for launching on a 64 bit machine.
+0, to Prefer 64bit JVM, if not available use 32 bit JVM
+1, to Prefer 32bit JVM, if not available use 64 bit JVM
+2, to Prefer 64bit JVM, if not available exit with error
+3, to Prefer 32bit JVM, if not available exit with error]]></string>
 															</property>
 														</object>
 													</method>
@@ -570,19 +574,15 @@ Relative paths are relative to the launcher.]]></string>
 														</object>
 													</method>
 													<method name="addElement">
-														<object class="com.zerog.ia.installer.util.LAXPropertyData" objectID="267ca000b70b">
+														<object class="com.zerog.ia.installer.util.LAXPropertyData" objectID="267ca000b70e">
 															<property name="propertyValue">
-																<string><![CDATA[0]]></string>
+																<string><![CDATA[]]></string>
 															</property>
 															<property name="propertyName">
-																<string><![CDATA[lax.nl.win32.java.launcher.platform]]></string>
+																<string><![CDATA[lax.product.version]]></string>
 															</property>
 															<property name="propertyComment">
-																<string><![CDATA[Set this variable to following values for launching on a 64 bit machine.
-0, to Prefer 64bit JVM, if not available use 32 bit JVM
-1, to Prefer 32bit JVM, if not available use 64 bit JVM
-2, to Prefer 64bit JVM, if not available exit with error
-3, to Prefer 32bit JVM, if not available exit with error]]></string>
+																<string><![CDATA[The product version of the LaunchAnywhere that created this properties file]]></string>
 															</property>
 														</object>
 													</method>
@@ -668,19 +668,6 @@ it will search for ones in this list]]></string>
 														</object>
 													</method>
 													<method name="addElement">
-														<object class="com.zerog.ia.installer.util.LAXPropertyData" objectID="267ca000b70d">
-															<property name="propertyValue">
-																<string><![CDATA[]]></string>
-															</property>
-															<property name="propertyName">
-																<string><![CDATA[lax.file.description]]></string>
-															</property>
-															<property name="propertyComment">
-																<string><![CDATA[The description of the LaunchAnywhere that created this properties file]]></string>
-															</property>
-														</object>
-													</method>
-													<method name="addElement">
 														<object class="com.zerog.ia.installer.util.LAXPropertyData" objectID="267ca001b709">
 															<property name="propertyValue">
 																<string><![CDATA[]]></string>
@@ -691,6 +678,19 @@ it will search for ones in this list]]></string>
 															<property name="propertyComment">
 																<string><![CDATA[leave blank for no output, "console" to send to a console window,
 and any path to a file to save to the file]]></string>
+															</property>
+														</object>
+													</method>
+													<method name="addElement">
+														<object class="com.zerog.ia.installer.util.LAXPropertyData" objectID="267ca000b70d">
+															<property name="propertyValue">
+																<string><![CDATA[]]></string>
+															</property>
+															<property name="propertyName">
+																<string><![CDATA[lax.file.description]]></string>
+															</property>
+															<property name="propertyComment">
+																<string><![CDATA[The description of the LaunchAnywhere that created this properties file]]></string>
 															</property>
 														</object>
 													</method>
@@ -761,7 +761,7 @@ and any path to a file to save to the file]]></string>
 										<boolean>false</boolean>
 									</property>
 									<property name="totalSize">
-										<long>0</long>
+										<long>1</long>
 									</property>
 									<property name="macBinary">
 										<boolean>false</boolean>
@@ -1136,47 +1136,6 @@ and any path to a file to save to the file]]></string>
 																<int>0</int>
 															</property>
 														</object>
-														<object class="com.zerog.ia.installer.actions.InstallFile" objectID="26c8051eb88f">
-															<property name="belongsToUninstallPhase">
-																<boolean>false</boolean>
-															</property>
-															<property name="rollbackEnabledCancel">
-																<boolean>true</boolean>
-															</property>
-															<property name="rollbackEnabledError">
-																<boolean>true</boolean>
-															</property>
-															<property name="ruleExpression">
-																<string><![CDATA[]]></string>
-															</property>
-															<property name="unixPermissions">
-																<string><![CDATA[664]]></string>
-															</property>
-															<property name="sourceName">
-																<string><![CDATA[SimpleTextEditor.java]]></string>
-															</property>
-															<property name="overrideUnixPermissions">
-																<boolean>false</boolean>
-															</property>
-															<property name="sourcePath">
-																<string><![CDATA[/host/shared/ia2020/simple-text-editor/SimpleTextEditor-1.1/com/macrovision/test/]]></string>
-															</property>
-															<property name="shouldUninstall">
-																<boolean>true</boolean>
-															</property>
-															<property name="destinationName">
-																<string><![CDATA[SimpleTextEditor.java]]></string>
-															</property>
-															<property name="fileSize">
-																<long>7965</long>
-															</property>
-															<property name="macBinary">
-																<boolean>false</boolean>
-															</property>
-															<property name="targetCheckKind">
-																<int>0</int>
-															</property>
-														</object>
 														<object class="com.zerog.ia.installer.actions.InstallDirectory" objectID="26c80520b88f">
 															<property name="belongsToUninstallPhase">
 																<boolean>false</boolean>
@@ -1212,11 +1171,54 @@ and any path to a file to save to the file]]></string>
 																<boolean>false</boolean>
 															</property>
 															<property name="totalSize">
-																<long>5957</long>
+																<long>1</long>
 															</property>
 															<property name="macBinary">
 																<boolean>false</boolean>
 															</property>
+															<visualChildren>
+																<object class="com.zerog.ia.installer.actions.InstallFile" objectID="4a0832279e8b">
+																	<property name="belongsToUninstallPhase">
+																		<boolean>false</boolean>
+																	</property>
+																	<property name="rollbackEnabledCancel">
+																		<boolean>true</boolean>
+																	</property>
+																	<property name="rollbackEnabledError">
+																		<boolean>true</boolean>
+																	</property>
+																	<property name="ruleExpression">
+																		<string><![CDATA[]]></string>
+																	</property>
+																	<property name="unixPermissions">
+																		<string><![CDATA[664]]></string>
+																	</property>
+																	<property name="sourceName">
+																		<string><![CDATA[Settings.class]]></string>
+																	</property>
+																	<property name="overrideUnixPermissions">
+																		<boolean>false</boolean>
+																	</property>
+																	<property name="sourcePath">
+																		<string><![CDATA[/host/shared/ia2020/simple-text-editor/SimpleTextEditor-1.1/com/macrovision/test/util/]]></string>
+																	</property>
+																	<property name="shouldUninstall">
+																		<boolean>true</boolean>
+																	</property>
+																	<property name="destinationName">
+																		<string><![CDATA[Settings.class]]></string>
+																	</property>
+																	<property name="fileSize">
+																		<long>2917</long>
+																	</property>
+																	<property name="macBinary">
+																		<boolean>false</boolean>
+																	</property>
+																	<property name="targetCheckKind">
+																		<int>0</int>
+																	</property>
+																</object>
+															</visualChildren>
 														</object>
 													</visualChildren>
 												</object>
@@ -1259,7 +1261,7 @@ and any path to a file to save to the file]]></string>
 										<boolean>false</boolean>
 									</property>
 									<property name="totalSize">
-										<long>0</long>
+										<long>1</long>
 									</property>
 									<property name="macBinary">
 										<boolean>false</boolean>
@@ -3464,7 +3466,7 @@ Press "Done" to quit the installer.]]></string>
 								<boolean>true</boolean>
 							</property>
 							<property name="credentialInformation">
-								<object class="com.flexera.ia.vapp.datastructures.VMWareCredentialInformationImpl" objectID="40f3cc72a20d">
+								<object class="com.flexera.ia.vapp.datastructures.VMWareCredentialInformationImpl" objectID="4a546fb5aa08">
 									<property name="hostName">
 										<string><![CDATA[]]></string>
 									</property>
@@ -3521,7 +3523,7 @@ Press "Done" to quit the installer.]]></string>
 								</object>
 							</property>
 							<property name="deploymentCredentialInformation">
-								<object class="com.flexera.ia.vapp.datastructures.VMWareCredentialInformationImpl" objectID="40f3cc73a20d">
+								<object class="com.flexera.ia.vapp.datastructures.VMWareCredentialInformationImpl" objectID="4a546fc0aa08">
 									<property name="hostName">
 										<string><![CDATA[]]></string>
 									</property>
@@ -3591,7 +3593,7 @@ Press "Done" to quit the installer.]]></string>
 				<object class="java.util.Properties">
 					<method name="put">
 						<string><![CDATA[com.zerog.ia.project.save.last.date]]></string>
-						<string><![CDATA[March 30, 2020 9:56:53 PM UTC]]></string>
+						<string><![CDATA[April 1, 2020 5:39:02 PM UTC]]></string>
 					</method>
 					<method name="put">
 						<string><![CDATA[com.zerog.ia.build.options.optimization.platform.merge]]></string>
@@ -3639,7 +3641,7 @@ Press "Done" to quit the installer.]]></string>
 					</method>
 					<method name="put">
 						<string><![CDATA[com.zerog.ia.project.build.last.date]]></string>
-						<string><![CDATA[March 30, 2020 9:56:53 PM UTC]]></string>
+						<string><![CDATA[April 1, 2020 5:13:36 PM UTC]]></string>
 					</method>
 					<method name="put">
 						<string><![CDATA[com.zerog.ia.installer.options.platform.macosx.authentication]]></string>
@@ -5590,14 +5592,14 @@ InstallAnywhere will remove the features that were installed during product inst
 				<int>0</int>
 			</property>
 			<property name="savedExpressions">
-				<object class="com.zerog.ia.designer.manageexpressions.ManageExpressions" objectID="407e4fbd9e1c">
+				<object class="com.zerog.ia.designer.manageexpressions.ManageExpressions" objectID="4a0822429e16">
 					<property name="expressions">
 						<object class="java.util.Vector"/>
 					</property>
 				</object>
 			</property>
 			<property name="fileExtensions">
-				<object class="com.zerog.ia.designer.manageexpressions.fileextension.FileExtensions" objectID="407e4fc39e1c">
+				<object class="com.zerog.ia.designer.manageexpressions.fileextension.FileExtensions" objectID="4a08224a9e16">
 					<property name="fileExtensionEntries">
 						<object class="java.util.ArrayList" list="true"/>
 					</property>
@@ -5868,7 +5870,6 @@ InstallAnywhere will remove the features that were installed during product inst
 										<object refID="26c80512b88f"/>
 										<object refID="26c80515b88f"/>
 										<object refID="26c80518b88f"/>
-										<object refID="26c8051eb88f"/>
 										<object refID="26c8052fb88f"/>
 										<object refID="26c80531b88f"/>
 										<object refID="26c86b52b88f"/>
@@ -5911,11 +5912,12 @@ InstallAnywhere will remove the features that were installed during product inst
 											</property>
 										</object>
 										<object refID="30a38f0da360"/>
+										<object refID="4a0832279e8b"/>
+										<object refID="30a38f0aa360"/>
 										<object refID="26c80520b88f"/>
 										<object refID="26c804feb88f"/>
 										<object refID="26c804fcb88f"/>
 										<object refID="26c804f9b88f"/>
-										<object refID="30a38f0aa360"/>
 									</installChildren>
 								</object>
 								<object class="com.zerog.ia.installer.InstallComponent" objectID="267c9ffdb6f3">
@@ -6398,9 +6400,5 @@ InstallAnywhere will remove the features that were installed during product inst
 			</installChildren>
 		</object>
 	</installationObjects>
-	<restorationObjects count="3">
-		<object refID="30a38f0aa360"/>
-		<object refID="26c80520b88f"/>
-		<object refID="30a38f0da360"/>
-	</restorationObjects>
+	<restorationObjects count="0"/>
 </InstallAnywhere_Deployment_Project>
