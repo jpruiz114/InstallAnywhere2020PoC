@@ -20,12 +20,14 @@
 #
 # Product Name: SimpleTextEditor
 # Project File: /host/shared/ia2020/SimpleTextEditor-1.0/SimpleTextEditor-1.0.iap_xml
-# Generated:    Wed Apr 01 18:03:12 UTC 2020
+# Generated:    Fri Apr 03 00:30:08 UTC 2020
 
 
 ---- PRE-INSTALL ACTIONS ----
 -- IntroAction.267c9ffeb6ff
    +-- Help.267c9fffb6ff
+-- InstallPanelAction.507b312a9f55
+   +-- Help.507b312b9f55
 -- InstallDirAction.267c9ffeb700
    +-- Help.267c9fffb700
 -- ShortcutLocAction.267c9ffeb701
@@ -50,7 +52,7 @@
 -- UCustomAction.31e4a81ba177 (NoEP)
 -- UninstallAllOrFeaturesAction.267c9ffeb6f9
 -- CustomizeBundles.267c9fffb6fa
-   +-- Help.4a07ecbe9e6a
+   +-- Help.5074cb4b9e62
 
 
 ---- POST-UNINSTALL ACTIONS ----

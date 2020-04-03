@@ -19,7 +19,7 @@
 #
 # Product Name: SimpleTextEditor
 # Project File: /host/shared/ia2020/SimpleTextEditor-1.0/SimpleTextEditor-1.0.iap_xml
-# Generated:    Wed Apr 01 18:03:12 UTC 2020
+# Generated:    Fri Apr 03 00:30:08 UTC 2020
 
 
 # Billboard.267c9ffbb6e4.imageName=billboard_defaultNew.png
@@ -264,6 +264,21 @@ IntroAction.267c9ffeb6ff.stepTitle=Introduction
 
 # MakeExecutable.269e1b36b952.destinationName=SimpleTextEditor
 MakeExecutable.269e1b36b952.destinationName=SimpleTextEditor
+
+# PromptUserConsole.DatabaseName=Database name
+PromptUserConsole.DatabaseName=Database name
+
+# PromptUserConsole.Host=Host
+PromptUserConsole.Host=Host
+
+# PromptUserConsole.Password=Password
+PromptUserConsole.Password=Password
+
+# PromptUserConsole.Port=Port
+PromptUserConsole.Port=Port
+
+# PromptUserConsole.Username=Username
+PromptUserConsole.Username=Username
 
 # ShortcutLocAction.267c9ffeb701.macPrompt=Where would you like to create aliases?
 ShortcutLocAction.267c9ffeb701.macPrompt=Where would you like to create aliases?
