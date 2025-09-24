@@ -1,6 +1,6 @@
 # InstallAnywhere 2020 Proof of Concept
 
-The 2 InstallAnywhere projects used in this repository were built using InstallAnywhere 2020 SP1 for Linux under an Ubuntu 18 machine. The paths for files used by these projects will vary if they are opened in a Windows machine for instance.
+The 2 InstallAnywhere projects in this repository were built with InstallAnywhere 2020 SP1 on Ubuntu 18. File paths may differ if opened on Windows.
 
 ## Main folder structure
 ---
