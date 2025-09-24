@@ -14,7 +14,7 @@ The 2 InstallAnywhere projects used in this repository were built using InstallA
 ├── SimpleTextEditor-1.1
 ├── get-lib.sh
 ├── lib
-├── samples
+├── maven-tests
 ├── screenshots
 ├── simple-text-editor
 └── vagrant-dev-env
@@ -51,6 +51,7 @@ Custom Java project with InstallAnywhere actions. This project depends on IAClas
     ├── BackupUtils.java
     ├── CustomJavaActionBase.java
     ├── CustomJavaActionUpdate.java
+    ├── CustomPanelTest.java
     └── VariablesUtils.java
 ```
 
@@ -101,6 +102,19 @@ The *install* method will perform a backup of the installation excluding the bac
 The *uninstall* method will write a text file with the current timestamp plus the word "uninstalling_update_" and the version being uninstalled.
 
 @todo: Similar to the CustomJavaActionBase class, this logic would help customers with their backups in case they are not satisfied with an upgrade. Perhaps it makes more sense to perform the backup during the install event of an upgrade. This is yet to be decided.
+
+#### CustomPanelTest.java
+
+This is a custom panel class that extends CustomCodePanel to demonstrate how to create custom UI panels during installation. This panel prompts users to enter database connection parameters (host, port, database name, username, and password) and stores these values as installer variables for use by the installation process.
+
+The panel showcases how to:
+- Create custom form fields with labels and text inputs
+- Handle password fields with masked characters
+- Validate user input before proceeding
+- Set installer variables from user input
+- Use InstallAnywhere's internationalization resources
+
+This demonstrates InstallAnywhere's capability to gather user-specific configuration during installation.
 
 #### VariablesUtils.java
 
@@ -163,6 +177,38 @@ This shell script will download *commons-io-2.6* which is required to compile th
 ---
 
 This folder contains the library expected by the sample project.
+
+### maven-tests
+---
+
+A simple Maven project demonstrating Maven build lifecycle and plugin executions. This project includes:
+
+```bash
+.
+├── pom.xml
+└── src
+    ├── main
+    │   └── java
+    │       └── hello
+    │           ├── Greeter.java
+    │           └── HelloWorld.java
+    └── test
+        └── java
+            └── hello
+                └── GreeterTest.java
+```
+
+**Features:**
+- Maven project with Java 8 compilation
+- Joda Time dependency for date/time handling
+- JUnit testing framework
+- Custom Maven exec plugin configurations that run during test and install phases
+- Demonstrates passing Maven properties as command line arguments
+
+**Usage:**
+- Run `mvn test` to execute the application during test phase
+- Run `mvn install` to execute the application during install phase
+- Maven properties `argumentA` and `argumentB` can be customized via command line
 
 ### simple-text-editor
 ---
@@ -317,7 +363,7 @@ The shared folder can also be used to clone the current project and it's advised
 
 ![logs-home](screenshots/logs-home.png)
 
-## Net steps
+## Next steps
 
 - Add features to check if services are running and stop them
 - Uninstall previous installations built with older InstallAnywhere versions
