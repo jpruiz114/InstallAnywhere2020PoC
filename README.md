@@ -1,6 +1,6 @@
 # InstallAnywhere 2020 Proof of Concept
 
-The 2 InstallAnywhere projects in this repository were built with InstallAnywhere 2020 SP1 on Ubuntu 18. File paths may differ if opened on Windows.
+This is a proof of concept project demonstrating InstallAnywhere 2020's capabilities for building installers with custom actions, upgrade functionality, and UI customization. The project includes two InstallAnywhere projects built with InstallAnywhere 2020 SP1 on Ubuntu 18. File paths may differ if opened on Windows.
 
 ## Main folder structure
 ---
